@@ -1,13 +1,134 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* .container {
+  border: 1px solid black;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.form-input input {
+  background: transparent;
+  outline: none;
+  border: none;
+  /* padding: 7px 12px; */
+  width: 400px;
+}
+.form-input {
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid #ccc;
+  width: fit-content;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px 12px;
+}
+
+/* /* .btns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+} */
+textarea {
+  resize: none;
+  display: block;
+}
+
+.btns {
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  flex: 1;
+  padding: 7px 20px;
+  color: white;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 8px;
+  float: right;
+}
+.btns button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.btns button:active {
+  background-color: black;
+  color: white;
+}
+*/ .one {
+  flex: 1;
+
+  width: 100%;
+}
+.form-container {
+  background-color: rgb(48, 48, 48);
+  padding: 12px 0;
+  color: white;
+}
+
+.post {
+  margin: 15px 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid grey;
+}
+.post small {
+  margin: 12px 0 8px;
+  font-size: 12px;
+  display: block;
+  color: gray;
+}
+
+.post p {
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.post Link {
+  text-decoration: none;
+  color: black;
+}
+
+.form-cont {
+  margin-inline: auto;
+  width: 100%;
+}
+.form-cont label,
+.form-cont h2 {
+  text-align: left;
+  display: block;
+  margin: 14px 12px 0px;
+}
+
+.form-cont input,
+.form-cont textarea {
+  width: 350px;
+  padding: 6px;
+  margin-left: 12px;
+}
+.form-cont label {
+  color: #8b8787;
+}
+
+.form-cont button {
+  display: block;
+  margin-top: 12px;
+  width: fit-content;
+  padding: 6px 18px;
+  margin-left: 12px;
+  cursor: pointer;
 }
